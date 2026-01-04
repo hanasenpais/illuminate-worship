@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illuminate Worship | LED Screens for Churches Australia | Sydney, Melbourne, Brisbane</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Christian-owned AV solutions for churches across Australia. LED screens, professional lighting, custom projectors, full sanctuary fitouts. From the church world, for the church world. Sunday support & Technical Disciples training. Serving Sydney, Melbourne, Brisbane, Perth, Adelaide & more.">
+    <meta name="keywords" content="church LED screens Australia, church lighting systems Sydney, professional church lighting Melbourne, church projectors Brisbane, sanctuary AV fitouts Perth, worship technology Adelaide, church tech support Canberra, LED displays Gold Coast, church lighting Newcastle, sanctuary upgrades Hobart, church AV systems Wollongong, worship lighting Geelong, church technology Sunshine Coast, LED screens Townsville, church projectors Darwin, Sunday tech support, church lighting training">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Illuminate Worship - LED Screens for Churches Australia">
+    <meta property="og:description" content="Transform your sanctuary with premium LED displays. Seeds of Light giving program supports your ministry.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://illuminateworship.org/og-image.jpg">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Illuminate Worship",
+      "description": "LED Screen Supply and Installation for Churches",
+      "url": "https://illuminateworship.org",
+      "telephone": "+61-XXX-XXX-XXX",
+      "areaServed": [
+        {"@type": "City", "name": "Sydney"},
+        {"@type": "City", "name": "Melbourne"},
+        {"@type": "City", "name": "Brisbane"},
+        {"@type": "City", "name": "Perth"},
+        {"@type": "City", "name": "Adelaide"},
+        {"@type": "City", "name": "Canberra"},
+        {"@type": "City", "name": "Gold Coast"},
+        {"@type": "City", "name": "Newcastle"},
+        {"@type": "City", "name": "Hobart"}
+      ],
+      "priceRange": "$$$$"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-gold: #B8941F;
+            --deep-navy: #0A1128;
+            --warm-navy: #1C2541;
+            --cream: #F8F5EE;
+            --soft-white: #FEFDFB;
+            --light-gold: rgba(212, 175, 55, 0.1);
+            --text-primary: #0A1128;
+            --text-secondary: #4A5568;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Jost', sans-serif;
+            color: var(--text-primary);
+            background: var(--soft-white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section with Dramatic Background */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--warm-navy) 100%);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        .hero-rays {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            animation: rotate 60s linear infinite;
+        }
+        
+        .ray {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 40%;
+            background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.05), transparent);
+            transform-origin: center -100%;
+        }
+        
+        .ray:nth-child(1) { transform: rotate(0deg); }
+        .ray:nth-child(2) { transform: rotate(30deg); }
+        .ray:nth-child(3) { transform: rotate(60deg); }
+        .ray:nth-child(4) { transform: rotate(90deg); }
+        .ray:nth-child(5) { transform: rotate(120deg); }
+        .ray:nth-child(6) { transform: rotate(150deg); }
+        .ray:nth-child(7) { transform: rotate(180deg); }
+        .ray:nth-child(8) { transform: rotate(210deg); }
+        .ray:nth-child(9) { transform: rotate(240deg); }
+        .ray:nth-child(10) { transform: rotate(270deg); }
+        .ray:nth-child(11) { transform: rotate(300deg); }
+        .ray:nth-child(12) { transform: rotate(330deg); }
+        
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: var(--soft-white);
+            max-width: 900px;
+            padding: 2rem;
+            animation: fadeInUp 1.2s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 4.5rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1.2s ease-out 0.2s both;
+        }
+        
+        .logo-accent {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .tagline {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            margin-bottom: 2rem;
+            color: var(--gold);
+            animation: fadeInUp 1.2s ease-out 0.4s both;
+        }
+        
+        .hero-description {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            animation: fadeInUp 1.2s ease-out 0.6s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--gold);
+            color: var(--deep-navy);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            border: 2px solid var(--gold);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.2s ease-out 0.8s both;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--soft-white);
+            transition: left 0.4s ease;
+            z-index: -1;
+        }
+        
+        .cta-button:hover::before {
+            left: 0;
+        }
+        
+        .cta-button:hover {
+            color: var(--deep-navy);
+            border-color: var(--soft-white);
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            background: rgba(10, 17, 40, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: padding 0.3s ease;
+        }
+        
+        nav.scrolled {
+            padding: 1rem 5%;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Jost', sans-serif;
+            font-size: 1.5rem;
+            color: var(--soft-white);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--soft-white);
+            text-decoration: none;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 8rem 5%;
+            position: relative;
+        }
+        
+        .section-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: var(--deep-navy);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+            margin: 1.5rem auto 0;
+        }
+        
+        /* Values Section */
+        #values {
+            background: var(--cream);
+        }
+        
+        .values-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .value-card {
+            background: var(--soft-white);
+            padding: 3rem 2rem;
+            border-left: 4px solid var(--gold);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--deep-navy);
+        }
+        
+        .value-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        /* Seeds of Light Section */
+        #seeds-of-light {
+            background: linear-gradient(135deg, var(--deep-navy) 0%, var(--warm-navy) 100%);
+            color: var(--soft-white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #seeds-of-light::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .seeds-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .seeds-intro {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: 300;
+            line-height: 1.9;
+        }
+        
+        .seeds-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .seed-feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .seed-feature h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .seed-percentage {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .example-impact {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 3rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .example-impact h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--gold);
+        }
+        
+        .impact-details {
+            display: grid;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .impact-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .impact-total {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-top: 1rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--gold);
+        }
+        
+        /* Custom list styling for disciples program */
+        .disciples-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .disciples-list li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .disciples-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Services Section */
+        #services {
+            background: var(--soft-white);
+        }
+        
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .service-card {
+            text-align: center;
+            padding: 2.5rem;
+            background: var(--cream);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            background: var(--light-gold);
+            transform: translateY(-8px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-title {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--deep-navy);
+        }
+        
+        /* Coverage Section */
+        #coverage {
+            background: var(--cream);
+        }
+        
+        .coverage-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+        
+        .cities-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .city-card {
+            background: var(--soft-white);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.15);
+        }
+        
+        .city-name {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--deep-navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .city-state {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* SEO Content Section */
+        .seo-content {
+            max-width: 900px;
+            margin: 4rem auto 0;
+            padding: 3rem;
+            background: var(--soft-white);
+            border-radius: 8px;
+        }
+        
+        .seo-content h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--deep-navy);
+        }
+        
+        .seo-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        
+        /* Contact Section */
+        #contact {
+            background: var(--deep-navy);
+            color: var(--soft-white);
+        }
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-intro {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-method {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .contact-method h3 {
+            font-family: 'Crimson Pro', serif;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .contact-method a {
+            color: var(--soft-white);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-method a:hover {
+            color: var(--gold);
+        }
+        
+        .verse {
+            font-family: 'Crimson Pro', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--warm-navy);
+            color: var(--soft-white);
+            padding: 3rem 5%;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--soft-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 5rem 5%;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--deep-navy);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .impact-row {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">ILLUMINATE WORSHIP</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#our-story">Our Story</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#seeds-of-light">Seeds of Light</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#coverage">Coverage</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-rays">
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+            <div class="ray"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="logo">ILLUMINATE WORSHIP</h1>
+            <p class="tagline">BRINGING VISION TO LIGHT</p>
+            <p class="hero-description">
+                Transform your sanctuary with complete AV solutions: LED displays, professional lighting, custom projectors, and expert support. Purpose-built technology for worship, backed by our Seeds of Light giving program that supports your ministry.
+            </p>
+            <a href="#contact" class="cta-button">Request Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" style="background: var(--soft-white); padding: 8rem 5%;">
+        <h2 class="section-title">Our Story</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="background: var(--cream); padding: 3rem; border-left: 4px solid var(--gold); border-radius: 8px; margin-bottom: 3rem;" class="fade-in">
+                <p style="font-size: 1.2rem; line-height: 1.9; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    We come from the church world. Our team has served in worship ministries, sat on church tech teams, and experienced firsthand the frustration of trying to get quality AV equipment from businesses that don't understand—or frankly, don't care about—the unique needs of churches.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.9; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    For too long, churches have had only one option: working with secular music and touring companies whose schedules revolve around nightclubs, concerts, and corporate events. When you need help on a Sunday morning, they're unavailable. When you need equipment, you're competing with touring bands for priority. When you need understanding about budget constraints and volunteer teams, you get sales pitches designed for professional venues with full-time staff.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.9; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    <strong>We founded Illuminate Worship to give churches a different option:</strong> a Christian business that operates on church schedules, understands church budgets, and genuinely cares about your ministry outcomes—not just equipment sales.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.9; color: var(--text-secondary);">
+                    Our installations happen around your services, not tour schedules. Our support team is available on Sundays, not at the club on Saturday night. Our pricing reflects responsible stewardship, not entertainment industry markups. We speak your language because we come from your world.
+                </p>
+            </div>
+
+            <div style="background: var(--light-gold); padding: 3rem; border-radius: 8px; text-align: center;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    A Christian Business for Christian Ministry
+                </h3>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    When you work with us, you're partnering with people who pray for your ministry, understand the weight of Sunday mornings, and measure success by whether your congregation encounters God more fully—not just whether the equipment works.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values">
+        <h2 class="section-title">Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card fade-in">
+                <div class="value-icon">⚖️</div>
+                <h3 class="value-title">Stewardship First</h3>
+                <p class="value-description">We honor the sacrificial giving of congregations by providing transparent pricing, honest assessments, and solutions that maximize every dollar's kingdom impact.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">🤝</div>
+                <h3 class="value-title">Servant Leadership</h3>
+                <p class="value-description">Like Christ who came to serve, we approach every project asking "How can we help?" rather than "How can we sell?" Your ministry goals drive our recommendations.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">✨</div>
+                <h3 class="value-title">Excellence in All Things</h3>
+                <p class="value-description">"Whatever you do, work at it with all your heart, as working for the Lord" (Colossians 3:23). We deliver installation quality and customer service that reflects this calling.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">🌱</div>
+                <h3 class="value-title">Community Partnership</h3>
+                <p class="value-description">We don't just install screens—we invest in your community's success through our Seeds of Light giving program.</p>
+            </div>
+            
+            <div class="value-card fade-in">
+                <div class="value-icon">🛡️</div>
+                <h3 class="value-title">Integrity Always</h3>
+                <p class="value-description">Our word is our bond. Clear communication, honest timelines, and no hidden costs—because trust is the foundation of every meaningful relationship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" style="background: linear-gradient(135deg, var(--deep-navy) 0%, var(--warm-navy) 100%); color: var(--soft-white); padding: 8rem 5%; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -20%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%); border-radius: 50%;"></div>
+        
+        <div style="max-width: 1000px; margin: 0 auto; position: relative; z-index: 10;">
+            <h2 class="section-title" style="color: var(--soft-white);">From the Church, For the Church</h2>
+            
+            <div style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 3rem;" class="fade-in">
+                <p style="margin-bottom: 1.5rem;">
+                    We come from the church world. Our team has served in worship ministries, managed tech booths, and experienced firsthand the frustration of trying to source quality AV equipment from an industry that doesn't understand—or care about—church needs.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    The secular touring and nightclub industry operates on a completely different rhythm. Their installers work late nights and weekends. Their support teams are focused on concerts and events. Their sales approach assumes unlimited budgets and professional operators. When churches try to work with these companies, the mismatch is obvious: rushed Sunday installations that disrupt services, support lines that aren't staffed on Sunday mornings, and pricing structures designed for commercial venues, not congregational giving.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    <strong style="color: var(--gold); font-size: 1.3rem;">We exist to give churches another option.</strong>
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    A Christian business that understands ministry schedules. That respects the sacredness of Sunday mornings. That knows your tech team is volunteers, not professionals. That recognizes every dollar you spend comes from faithful giving, not corporate budgets. That celebrates when technology amplifies the Gospel rather than just creates a "cool experience."
+                </p>
+                <p>
+                    Our calendar revolves around church rhythms—we install on weekdays to preserve your weekends for ministry. Our support team works Sunday mornings because that's when you need us most. Our pricing reflects stewardship, not maximizing profit. We're not just vendors; we're brothers and sisters in Christ, serving the body through the skills God has given us.
+                </p>
+            </div>
+
+            <div style="background: rgba(212, 175, 55, 0.1); padding: 2.5rem; border-left: 4px solid var(--gold); border-radius: 8px; margin-top: 3rem;" class="fade-in">
+                <p style="font-family: 'Crimson Pro', serif; font-style: italic; font-size: 1.3rem; line-height: 1.8; margin: 0;">
+                    "Finally, a tech company that understands we're not a nightclub. They know our schedule, they respect our values, and they genuinely care about our ministry—not just our money."
+                </p>
+                <p style="text-align: right; margin-top: 1rem; color: var(--gold);">
+                    — Typical Church Leader (probably)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seeds of Light Section -->
+    <section id="seeds-of-light">
+        <h2 class="section-title" style="color: var(--soft-white);">The Seeds of Light Partnership</h2>
+        <div class="seeds-content">
+            <p class="seeds-intro">
+                Transform your technology upgrade into an opportunity for community engagement and charitable impact. The Seeds of Light program ensures that every LED installation creates ripples of blessing throughout your ministry.
+            </p>
+            
+            <div class="seeds-features">
+                <div class="seed-feature fade-in">
+                    <div class="seed-percentage">5%</div>
+                    <h3>Direct Donation</h3>
+                    <p>We contribute 5% of your project cost directly to a qualified charitable cause of your choice—building fund, missions program, local food bank, or Christian school.</p>
+                </div>
+                
+                <div class="seed-feature fade-in">
+                    <div class="seed-percentage">$50</div>
+                    <h3>Per $1,000 Raised</h3>
+                    <p>For every $1,000 raised by your congregation, we donate an additional $50 to your chosen ministry (up to $2,500 total).</p>
+                </div>
+                
+                <div class="seed-feature fade-in">
+                    <div class="seed-percentage">100%</div>
+                    <h3>Fundraising Support</h3>
+                    <p>Custom donation tracking graphics, social media templates, donor recognition options, and monthly giving program materials—all provided free.</p>
+                </div>
+            </div>
+            
+            <div class="example-impact fade-in">
+                <h3>Example Impact: Grace Community Church</h3>
+                <div class="impact-details">
+                    <div class="impact-row">
+                        <span>15ft LED Display Project Cost:</span>
+                        <strong>$45,000</strong>
+                    </div>
+                    <div class="impact-row">
+                        <span>Our Direct Donation (5%):</span>
+                        <strong>$2,250 → Church Building Fund</strong>
+                    </div>
+                    <div class="impact-row">
+                        <span>Congregation Raised:</span>
+                        <strong>$25,000</strong>
+                    </div>
+                    <div class="impact-row">
+                        <span>Our Matching Seed Fund:</span>
+                        <strong>$1,250 → Local Youth Ministry</strong>
+                    </div>
+                    <div class="impact-total">
+                        Total Charitable Impact: $3,500
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">Complete Sanctuary Technology Solutions</h2>
+        <p style="text-align: center; max-width: 900px; margin: 0 auto 4rem; font-size: 1.2rem; color: var(--text-secondary);">
+            From LED displays to lighting systems, projectors to ongoing support—we provide everything your church needs to create powerful worship experiences, without the technical headaches.
+        </p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">📺</div>
+                <h3 class="service-title">LED Display Systems</h3>
+                <p>High-resolution sanctuary screens, outdoor marquees, and multi-campus video solutions. Custom-sized for optimal visibility from every seat.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">💡</div>
+                <h3 class="service-title">Professional Lighting Fitouts</h3>
+                <p>Custom-built lighting systems that perform like premium gear at responsible prices. We handle all the technical setup—your team just presses play.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">🎥</div>
+                <h3 class="service-title">Custom Projector Solutions</h3>
+                <p>Brighter, clearer projection at better prices than retail. Purpose-built for worship environments, sermon visibility, and livestreaming.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">📐</div>
+                <h3 class="service-title">Full Sanctuary Fitouts</h3>
+                <p>Complete AV transformations or incremental upgrades that fit your budget. We design systems that grow with your ministry.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">🎓</div>
+                <h3 class="service-title">Technical Disciples Program</h3>
+                <p>We train one person from your church to become your in-house expert—equipped to lead your tech team, train others, and multiply technical ministry.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">📞</div>
+                <h3 class="service-title">Sunday Support Team</h3>
+                <p>Tech issues don't wait for Monday. Our team is on standby every Sunday to handle emergencies and keep your service running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We're Different Section -->
+    <section id="why-us" style="background: var(--soft-white); padding: 8rem 5%;">
+        <h2 class="section-title">How We're Different</h2>
+        
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <!-- Lighting Explanation -->
+            <div style="background: var(--cream); padding: 3rem; margin-bottom: 3rem; border-left: 4px solid var(--gold); border-radius: 8px;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 1.5rem;">
+                    💡 Lighting That Just Works—No Technical Nightmares
+                </h3>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Here's what most churches face with lighting: you buy equipment online, it arrives, and then you discover you need to program "fixture profiles" into your lighting software. This means hunting down technical files, learning complex software, and spending hours figuring out which buttons control which lights. Many churches give up and just leave lights on one color permanently.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    <strong>We eliminate all of that.</strong> When we install your lighting system, we custom-build fixtures specifically for your sanctuary and pre-program everything into your lighting software. On Sunday morning, your volunteer tech team sees simple, clear controls: "Worship Scene," "Sermon Scene," "Altar Lighting"—they click a button, and everything responds perfectly.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    You get professional-grade lighting performance at prices that respect your budget, without the technical complexity. No hunting for files, no programming headaches, no "we can't figure out how to make this work." Just beautiful, controllable light that enhances worship.
+                </p>
+            </div>
+
+            <!-- Projector Explanation -->
+            <div style="background: var(--cream); padding: 3rem; margin-bottom: 3rem; border-left: 4px solid var(--gold); border-radius: 8px;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 1.5rem;">
+                    🎥 Brighter, Clearer, More Affordable Projection
+                </h3>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Retail projectors are designed for boardrooms and home theaters, not sanctuary worship. They struggle with ambient light, lack the brightness for large screens, and often can't handle the distance from your tech booth to your display surface.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    Our custom-produced projectors are engineered specifically for worship environments. We source premium components, optimize for sanctuary conditions, and deliver brighter, clearer images than comparable retail models—at better prices. Your congregation actually reads the lyrics clearly, sermon points stay visible even with stage lighting on, and you're not constantly dimming lights to see the screen.
+                </p>
+            </div>
+
+            <!-- Fitout Options -->
+            <div style="background: var(--cream); padding: 3rem; margin-bottom: 3rem; border-left: 4px solid var(--gold); border-radius: 8px;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 1.5rem;">
+                    📐 Your Pace, Your Budget—Complete or Incremental
+                </h3>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Some churches need everything replaced at once. Others need to upgrade in phases as budget allows. We work both ways.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    <strong>Full Sanctuary Fitouts:</strong> Complete AV transformation—screens, lighting, projection, sound integration, control systems. We design everything to work together seamlessly.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    <strong>Incremental Upgrades:</strong> Start with the LED screen this year, add lighting next year, upgrade projection when budget allows. We plan your system so each phase integrates perfectly with future additions. No wasted investment, no incompatibility issues down the road.
+                </p>
+            </div>
+
+            <!-- Sunday Support -->
+            <div style="background: var(--cream); padding: 3rem; margin-bottom: 3rem; border-left: 4px solid var(--gold); border-radius: 8px;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 1.5rem;">
+                    📞 Sunday Morning Support—Because Issues Don't Wait
+                </h3>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    You know the panic: it's 9:45am on Sunday, service starts in 15 minutes, and the screen won't display. Or the lights are stuck on one color. Or the projector shows an error code no one understands.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1rem;">
+                    Most AV companies tell you to "submit a ticket" and wait for Monday. We don't.
+                </p>
+                <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-secondary);">
+                    <strong>Our team is on standby every Sunday morning.</strong> Call or text us, and we'll walk you through the fix—or if needed, remotely access your system to resolve it. We understand that worship doesn't reschedule because of technical problems. Your service matters, and we're there when you need us most.
+                </p>
+            </div>
+
+            <!-- Technical Disciples Program -->
+            <div style="background: linear-gradient(135deg, var(--deep-navy) 0%, var(--warm-navy) 100%); color: var(--soft-white); padding: 3.5rem; border-radius: 8px; position: relative; overflow: hidden;" class="fade-in">
+                <div style="position: absolute; top: -50%; right: -20%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%); border-radius: 50%;"></div>
+                
+                <div style="position: relative; z-index: 10;">
+                    <h3 style="font-family: 'Crimson Pro', serif; font-size: 2.5rem; color: var(--gold); margin-bottom: 1.5rem;">
+                        ✝️ The Technical Disciples Program—Multiplying Leaders
+                    </h3>
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Jesus didn't do ministry alone—He equipped disciples to carry the work forward. We follow the same principle with your tech team.
+                    </p>
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        When we install your system, we don't just train everyone equally and leave. We identify one person from your church—someone who's passionate about technology, reliable, and willing to learn—and <strong style="color: var(--gold); font-size: 1.2rem;">invest deeply in making them your Technical Disciple.</strong>
+                    </p>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 2.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.2);">
+                        <h4 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--gold); margin-bottom: 1.5rem;">Your Technical Disciple Receives:</h4>
+                        <ul style="font-size: 1.1rem; line-height: 2.2; margin-left: 1.5rem;">
+                            <li><strong style="color: var(--gold);">Deep System Mastery:</strong> Beyond "how to turn it on"—they learn troubleshooting, advanced features, system optimization, and the "why" behind every component</li>
+                            <li><strong style="color: var(--gold);">Direct Access Line:</strong> Priority support with our team—not a general helpline, but a direct connection for technical questions and guidance</li>
+                            <li><strong style="color: var(--gold);">Comprehensive Resources:</strong> Video tutorials, detailed documentation, troubleshooting flowcharts, and quick-reference guides they can use to train others</li>
+                            <li><strong style="color: var(--gold);">Leadership Development:</strong> Training on how to build, manage, and multiply a volunteer tech team that serves with excellence and confidence</li>
+                            <li><strong style="color: var(--gold);">Seasonal Optimization:</strong> Updates on maximizing your system for Christmas productions, Easter services, baptism Sundays, and special events</li>
+                            <li><strong style="color: var(--gold);">Succession Planning:</strong> Framework and materials to train their eventual replacement, ensuring your church's technical capacity continues strong</li>
+                        </ul>
+                    </div>
+
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Your Technical Disciple becomes the <strong style="color: var(--gold);">resident expert</strong>—the person who can handle 95% of issues without calling us, who trains new volunteers with confidence, who optimizes your system as your ministry grows, and who becomes a genuine asset to your church leadership team.
+                    </p>
+                    
+                    <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 1rem;">
+                        <strong>Like disciples multiplying disciples,</strong> they become empowered to raise up others. When they eventually move on or step down, they train their replacement. Your church develops sustainable technical capacity, not dependency on external vendors.
+                    </p>
+
+                    <p style="font-size: 1.2rem; line-height: 1.8; font-style: italic; color: var(--gold); margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+                        "Equipping the saints for the work of ministry, for building up the body of Christ." — Ephesians 4:12
+                    </p>
+                    
+                    <p style="font-size: 1.05rem; line-height: 1.8; margin-top: 1rem;">
+                        And yes, we're still available for Sunday emergencies and complex issues—but most weeks, you won't need us. <strong>That's the goal.</strong> True discipleship creates independence, not dependency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section id="coverage">
+        <h2 class="section-title">Serving Churches Across Australia</h2>
+        <p class="coverage-intro">
+            From metropolitan cathedrals to suburban community churches, we provide professional LED screen installation and support throughout Australia's major cities and regional centers.
+        </p>
+        
+        <div class="cities-grid">
+            <div class="city-card fade-in">
+                <h3 class="city-name">Sydney</h3>
+                <p class="city-state">New South Wales</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Melbourne</h3>
+                <p class="city-state">Victoria</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Brisbane</h3>
+                <p class="city-state">Queensland</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Perth</h3>
+                <p class="city-state">Western Australia</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Adelaide</h3>
+                <p class="city-state">South Australia</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Canberra</h3>
+                <p class="city-state">Australian Capital Territory</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Gold Coast</h3>
+                <p class="city-state">Queensland</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Newcastle</h3>
+                <p class="city-state">New South Wales</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Hobart</h3>
+                <p class="city-state">Tasmania</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Wollongong</h3>
+                <p class="city-state">New South Wales</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Geelong</h3>
+                <p class="city-state">Victoria</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Sunshine Coast</h3>
+                <p class="city-state">Queensland</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Townsville</h3>
+                <p class="city-state">Queensland</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Darwin</h3>
+                <p class="city-state">Northern Territory</p>
+            </div>
+            
+            <div class="city-card fade-in">
+                <h3 class="city-name">Cairns</h3>
+                <p class="city-state">Queensland</p>
+            </div>
+        </div>
+        
+        <div class="seo-content">
+            <h3>Complete Church AV Solutions Australia-Wide</h3>
+            <p>
+                Whether your church is in the heart of Sydney's CBD, Melbourne's growing suburbs, Brisbane's northside, or Perth's western corridor, Illuminate Worship brings comprehensive audio-visual solutions to your sanctuary. We understand the unique needs of Australian churches—from climate considerations for outdoor displays to integration with existing ProPresenter and MediaShout systems, from lighting that works with your worship style to projectors that perform in bright sanctuaries.
+            </p>
+            <p>
+                Our team has installed complete AV systems in churches ranging from 100-seat community chapels to 2,000+ seat megachurches across New South Wales, Victoria, Queensland, Western Australia, South Australia, and beyond. We handle everything from initial consultation to final training, ensuring your volunteer tech team feels confident operating your LED screens, lighting systems, and projection equipment—with our Sunday support team just a phone call away when you need help.
+            </p>
+            <p>
+                Looking for church lighting installation in Adelaide? Need a complete sanctuary fitout in Canberra? Planning LED screens and projection upgrades in the Gold Coast? Our Seeds of Light partnership program makes premium technology accessible to churches of all sizes while supporting the ministries you care about most. We offer complete transformations or incremental upgrades that respect your budget and timeline.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" style="background: var(--soft-white); padding: 8rem 5%;">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    How much does a church LED screen installation cost?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    LED screen installations typically range from $20,000-$80,000 depending on size, resolution, and complexity. We offer free consultations and custom quotes based on your sanctuary dimensions, viewing distances, and budget. Our Seeds of Light program helps with church fundraising by donating 5% of project cost to your chosen ministry, plus matching congregational giving. Contact us for a personalized assessment.
+                </p>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    Do you provide training for volunteer tech teams?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Yes! Our Technical Disciples Program provides deep mentorship for one person from your church to become your in-house expert. We also offer broader volunteer team training. All installations include comprehensive training, documentation, and lifetime support. Your team will feel confident operating the system from day one, with ongoing access to our support team.
+                </p>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    What areas in Australia do you serve?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    We serve churches throughout Australia including Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Gold Coast, Newcastle, Hobart, Wollongong, Geelong, and regional areas. We're a service area business that travels to your location for consultation, installation, and training. Contact us to discuss your project regardless of location—we work with churches across the entire country.
+                </p>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    What makes you different from other AV companies?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    We're from the church industry, not the nightclub/touring industry. We understand ministry schedules, volunteer teams, and congregational budgets. We install on weekdays to preserve your weekends for ministry, provide Sunday emergency support when you need it most, and our Technical Disciples Program builds your long-term capability instead of vendor dependency. We're a Christian-owned business serving churches specifically.
+                </p>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    Do you offer Sunday technical support?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Yes! Unlike most AV companies, our team is on standby every Sunday morning. We provide live phone and remote support for technical emergencies during services. We understand that worship doesn't reschedule for technical problems. Whether it's 9:45am and service starts in 15 minutes, or something goes wrong mid-service, call us anytime Sunday morning and we'll help immediately.
+                </p>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    Can you work with our existing equipment?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Absolutely. We offer complete sanctuary fitouts or incremental upgrades that integrate with your current systems. We can assess your existing equipment and recommend phased improvements that fit your budget and timeline. Many churches start with LED screens and add lighting later, or upgrade projectors first and add displays as budget allows. We design systems that grow with your ministry.
+                </p>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    How long does installation take?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Most LED screen installations take 1-3 days depending on size and complexity. Complete sanctuary fitouts typically take 3-7 days. We work around your service schedule, usually installing Monday-Friday to minimize disruption to your weekend ministry. We ensure everything is fully tested, calibrated, and your team is comprehensively trained before we consider the project complete.
+                </p>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    Do you offer financing or payment plans?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    We work with churches to create payment structures that fit your budget. Our Seeds of Light program also helps with fundraising—we donate 5% of project cost to your chosen ministry, plus matching funds for congregational giving. This can significantly reduce your net cost while supporting important causes. Contact us to discuss flexible payment options and fundraising strategies for your specific situation.
+                </p>
+            </div>
+
+            <!-- FAQ Item 9 -->
+            <div class="faq-item fade-in" style="margin-bottom: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    What's the difference between LED screens and projectors?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    LED screens offer superior brightness, clarity, and longevity compared to projectors. They work perfectly even with stage lighting on, don't require darkening the sanctuary, and maintain consistent image quality for 10+ years. Projectors are more budget-friendly initially but require lamp replacements and struggle with ambient light. We can help you evaluate which solution best fits your sanctuary environment, budget, and worship style.
+                </p>
+            </div>
+
+            <!-- FAQ Item 10 -->
+            <div class="faq-item fade-in" style="margin-bottom: 0;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.6rem; color: var(--deep-navy); margin-bottom: 1rem;">
+                    How do I get started?
+                </h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    Simply contact us for a free consultation. We'll discuss your vision, assess your sanctuary (either in person or via video call), provide recommendations tailored to your needs, and create a custom quote. There's no pressure and no obligation—we're here to serve your ministry and help you make the best decision for your church. Many consultations lead to long-term partnerships, but we're happy to provide guidance even if you're just exploring options.
+                </p>
+                <a href="#contact" style="display: inline-block; padding: 1rem 2.5rem; background: var(--gold); color: var(--deep-navy); text-decoration: none; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.95rem; border: 2px solid var(--gold); transition: all 0.3s ease;">
+                    Get Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" style="background: var(--cream); padding: 8rem 5%;">
+        <h2 class="section-title">Join Our Team</h2>
+        
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <p style="font-size: 1.3rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    We're building something special: a company that serves churches with excellence while living out Christian values. If you're passionate about technology, ministry, and making a difference, we'd love to hear from you.
+                </p>
+            </div>
+            
+            <!-- Why Join Us -->
+            <div style="background: var(--soft-white); padding: 3rem; margin-bottom: 3rem; border-left: 4px solid var(--gold); border-radius: 8px;" class="fade-in">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); margin-bottom: 2rem;">
+                    Why Work With Us
+                </h3>
+                <div style="display: grid; gap: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--deep-navy); font-size: 1.2rem; margin-bottom: 0.5rem;">🙏 Faith-Based Culture</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">Work for a Christian-owned business that operates with integrity, honors the Sabbath, and sees technology as ministry.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--deep-navy); font-size: 1.2rem; margin-bottom: 0.5rem;">🌱 Growth Opportunities</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">We're expanding rapidly. Get in early and grow with us as we serve churches across Australia and beyond.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--deep-navy); font-size: 1.2rem; margin-bottom: 0.5rem;">💼 Meaningful Work</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">Every installation amplifies the Gospel. Every training session equips volunteers. Your work has eternal impact.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--deep-navy); font-size: 1.2rem; margin-bottom: 0.5rem;">⚖️ Work-Life Balance</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">We respect ministry schedules and family time. Flexible hours, minimal weekend work (except Sunday support rotation).</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--deep-navy); font-size: 1.2rem; margin-bottom: 0.5rem;">🎓 Continuous Learning</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">Work with cutting-edge technology, receive ongoing training, and develop expertise in church AV solutions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Open Positions -->
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); text-align: center; margin-bottom: 2rem;">
+                    Current Opportunities
+                </h3>
+                
+                <!-- Position 1 -->
+                <div style="background: var(--soft-white); padding: 2.5rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);" class="fade-in">
+                    <h4 style="font-size: 1.5rem; color: var(--deep-navy); margin-bottom: 0.5rem;">AV Installation Technician</h4>
+                    <p style="color: var(--gold); margin-bottom: 1.5rem; font-weight: 500;">Sydney, Melbourne, Brisbane • Full-time</p>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Join our installation team bringing premium LED screens, lighting, and AV systems to churches across Australia. You'll work hands-on with cutting-edge technology while serving ministry.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Requirements:</strong> Technical aptitude, physical fitness, driver's license, positive attitude, willingness to travel.</p>
+                    <p style="color: var(--text-secondary);"><strong>Preferred:</strong> AV experience, electrical background, church tech volunteer experience.</p>
+                </div>
+                
+                <!-- Position 2 -->
+                <div style="background: var(--soft-white); padding: 2.5rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);" class="fade-in">
+                    <h4 style="font-size: 1.5rem; color: var(--deep-navy); margin-bottom: 0.5rem;">Technical Trainer / Support Specialist</h4>
+                    <p style="color: var(--gold); margin-bottom: 1.5rem; font-weight: 500;">Remote / Travel • Full-time</p>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Lead our Technical Disciples Program, training church volunteers and providing Sunday support. Perfect for someone who loves teaching and troubleshooting.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Requirements:</strong> AV systems knowledge, excellent communication, patience with volunteers, Sunday availability (rotation).</p>
+                    <p style="color: var(--text-secondary);"><strong>Preferred:</strong> Teaching experience, church background, ProPresenter/EasyWorship familiarity.</p>
+                </div>
+                
+                <!-- Position 3 -->
+                <div style="background: var(--soft-white); padding: 2.5rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);" class="fade-in">
+                    <h4 style="font-size: 1.5rem; color: var(--deep-navy); margin-bottom: 0.5rem;">Project Manager / AV Consultant</h4>
+                    <p style="color: var(--gold); margin-bottom: 1.5rem; font-weight: 500;">Sydney or Melbourne • Full-time</p>
+                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                        Manage church fitout projects from consultation through installation. Be the trusted advisor helping churches make wise technology decisions.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Requirements:</strong> Project management experience, AV industry knowledge, excellent client relations, budget management skills.</p>
+                    <p style="color: var(--text-secondary);"><strong>Preferred:</strong> Church ministry experience, technical sales background, understanding of congregational budgets.</p>
+                </div>
+                
+                <!-- General Application -->
+                <div style="background: linear-gradient(135deg, var(--deep-navy) 0%, var(--warm-navy) 100%); padding: 2.5rem; border-radius: 8px; color: var(--soft-white);" class="fade-in">
+                    <h4 style="font-size: 1.5rem; color: var(--gold); margin-bottom: 1rem;">Don't See Your Role?</h4>
+                    <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                        We're always looking for talented people who share our values. If you have skills in sales, marketing, operations, or technology and want to serve churches, we'd love to hear from you.
+                    </p>
+                    <p style="color: var(--gold); font-weight: 500;">Submit a general application below!</p>
+                </div>
+            </div>
+            
+            <!-- Application Form -->
+            <div style="background: var(--soft-white); padding: 3rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--deep-navy); text-align: center; margin-bottom: 2rem;">
+                    Apply Now
+                </h3>
+                
+                <form id="careersForm">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Full Name *</label>
+                        <input type="text" name="applicant_name" required 
+                               style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Email *</label>
+                        <input type="email" name="applicant_email" required 
+                               style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Phone *</label>
+                        <input type="tel" name="applicant_phone" required 
+                               style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Location (City/State) *</label>
+                        <input type="text" name="applicant_location" required 
+                               style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Position Applying For *</label>
+                        <select name="position" required
+                                style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                            <option value="">Select position...</option>
+                            <option value="installation-tech">AV Installation Technician</option>
+                            <option value="trainer-support">Technical Trainer / Support Specialist</option>
+                            <option value="project-manager">Project Manager / AV Consultant</option>
+                            <option value="general">General Application / Other</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">LinkedIn Profile or Resume URL</label>
+                        <input type="url" name="resume_url" 
+                               style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                               placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Tell us about yourself and why you'd be a great fit *</label>
+                        <textarea name="cover_letter" required rows="8"
+                                  style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif; resize: vertical;"
+                                  placeholder="Share your relevant experience, skills, and what excites you about serving churches through technology..."></textarea>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: var(--deep-navy); font-weight: 500;">Do you have church/ministry experience?</label>
+                        <select name="ministry_experience"
+                                style="width: 100%; padding: 1rem; background: var(--cream); border: 1px solid rgba(10, 17, 40, 0.1); border-radius: 4px; color: var(--deep-navy); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                            <option value="">Select...</option>
+                            <option value="staff">Former/Current Church Staff</option>
+                            <option value="volunteer-tech">Volunteer Tech Team Member</option>
+                            <option value="volunteer-other">Other Church Volunteer</option>
+                            <option value="attendee">Church Attendee</option>
+                            <option value="no">No Church Background</option>
+                        </select>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <label style="display: flex; align-items: start; color: var(--deep-navy); cursor: pointer;">
+                            <input type="checkbox" name="driver_license" style="margin-right: 0.75rem; margin-top: 0.25rem;">
+                            <span>I have a valid driver's license and am willing to travel for installations</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" 
+                            style="width: 100%; padding: 1.2rem 2rem; background: var(--gold); color: var(--deep-navy); border: 2px solid var(--gold); border-radius: 4px; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; font-family: 'Jost', sans-serif;">
+                        Submit Application
+                    </button>
+                    
+                    <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem; color: var(--text-secondary);">
+                        We review all applications carefully and will contact shortlisted candidates within 2 weeks.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" style="color: var(--soft-white);">Get in Touch</h2>
+        <div class="contact-container">
+            <p class="contact-intro">
+                Ready to transform your sanctuary? Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours.
+            </p>
+            
+            <!-- Contact Form -->
+            <form id="contactForm" style="max-width: 700px; margin: 0 auto 3rem;">
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Your Name *</label>
+                    <input type="text" name="name" required 
+                           style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                           placeholder="Pastor John Smith">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Email Address *</label>
+                    <input type="email" name="email" required 
+                           style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                           placeholder="pastor@yourchurch.com.au">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Phone Number *</label>
+                    <input type="tel" name="phone" required 
+                           style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                           placeholder="04XX XXX XXX">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Church Name *</label>
+                    <input type="text" name="church" required 
+                           style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                           placeholder="Grace Community Church">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Church Location *</label>
+                    <input type="text" name="location" required 
+                           style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;"
+                           placeholder="Sydney, NSW">
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Congregation Size (Approximate)</label>
+                    <select name="congregation_size" 
+                            style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                        <option value="">Select size...</option>
+                        <option value="under-100">Under 100</option>
+                        <option value="100-250">100-250</option>
+                        <option value="250-500">250-500</option>
+                        <option value="500-1000">500-1,000</option>
+                        <option value="1000-2000">1,000-2,000</option>
+                        <option value="over-2000">Over 2,000</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">What services are you interested in? *</label>
+                    <div style="background: rgba(255, 255, 255, 0.05); padding: 1.5rem; border-radius: 4px; border: 1px solid rgba(212, 175, 55, 0.3);">
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="LED Screens" style="margin-right: 0.5rem;">
+                            LED Screen Installation
+                        </label>
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Lighting" style="margin-right: 0.5rem;">
+                            Professional Lighting Systems
+                        </label>
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Projectors" style="margin-right: 0.5rem;">
+                            Custom Projector Solutions
+                        </label>
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Complete Fitout" style="margin-right: 0.5rem;">
+                            Complete Sanctuary Fitout
+                        </label>
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Livestream" style="margin-right: 0.5rem;">
+                            Livestream Integration
+                        </label>
+                        <label style="display: block; margin-bottom: 0.8rem; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Training" style="margin-right: 0.5rem;">
+                            Technical Disciples Training
+                        </label>
+                        <label style="display: block; color: var(--soft-white); cursor: pointer;">
+                            <input type="checkbox" name="services" value="Other" style="margin-right: 0.5rem;">
+                            Other / Not Sure Yet
+                        </label>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Project Timeline</label>
+                    <select name="timeline" 
+                            style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                        <option value="">When are you looking to start?</option>
+                        <option value="urgent">Urgent (Within 1 month)</option>
+                        <option value="soon">Soon (1-3 months)</option>
+                        <option value="planning">Planning Stage (3-6 months)</option>
+                        <option value="exploring">Just Exploring (6+ months)</option>
+                        <option value="unsure">Not Sure Yet</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Approximate Budget Range</label>
+                    <select name="budget" 
+                            style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif;">
+                        <option value="">Select budget range...</option>
+                        <option value="under-20k">Under $20,000</option>
+                        <option value="20k-50k">$20,000 - $50,000</option>
+                        <option value="50k-100k">$50,000 - $100,000</option>
+                        <option value="100k-200k">$100,000 - $200,000</option>
+                        <option value="over-200k">Over $200,000</option>
+                        <option value="unsure">Not Sure / Need Guidance</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; color: var(--gold); font-weight: 500;">Tell us about your project *</label>
+                    <textarea name="message" required rows="6"
+                              style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px; color: var(--soft-white); font-size: 1rem; font-family: 'Jost', sans-serif; resize: vertical;"
+                              placeholder="Tell us about your vision, current setup, specific challenges, or any questions you have..."></textarea>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: flex; align-items: start; color: var(--soft-white); cursor: pointer; font-size: 0.95rem;">
+                        <input type="checkbox" name="seeds_of_light" style="margin-right: 0.75rem; margin-top: 0.25rem;">
+                        <span>I'm interested in learning more about the Seeds of Light fundraising program</span>
+                    </label>
+                </div>
+                
+                <button type="submit" 
+                        style="width: 100%; padding: 1.2rem 2rem; background: var(--gold); color: var(--deep-navy); border: 2px solid var(--gold); border-radius: 4px; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; font-family: 'Jost', sans-serif;">
+                    Send Message
+                </button>
+                
+                <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem; color: var(--gold); opacity: 0.8;">
+                    We typically respond within 24 hours. For urgent Sunday support, call us directly.
+                </p>
+            </form>
+            
+            <div class="contact-methods">
+                <div class="contact-method fade-in">
+                    <h3>📞 Phone</h3>
+                    <a href="tel:+61XXXXXXXXX">1300 XXX XXX</a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Mon-Fri 9am-5pm AEST<br>Sunday Emergency Support</p>
+                </div>
+                
+                <div class="contact-method fade-in">
+                    <h3>✉️ Email</h3>
+                    <a href="mailto:info@illuminateworship.org">info@illuminateworship.org</a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">We respond within 24 hours</p>
+                </div>
+                
+                <div class="contact-method fade-in">
+                    <h3>🗓️ Book Consultation</h3>
+                    <a href="#contact">Schedule Free Call</a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Video or in-person available</p>
+                </div>
+            </div>
+            
+            <p class="verse">
+                "For where your treasure is, there your heart will be also." — Matthew 6:21
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Illuminate Worship. All rights reserved.</p>
+        <p>Complete AV Solutions for Churches | LED Screens | Lighting Systems | Custom Projectors | Sunday Support</p>
+        <p>Sydney | Melbourne | Brisbane | Perth | Adelaide | Canberra | Gold Coast | Newcastle | Hobart</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                if (key === 'services') {
+                    if (!data[key]) data[key] = [];
+                    data[key].push(value);
+                } else {
+                    data[key] = value;
+                }
+            });
+            
+            // Log to console (replace with actual form submission)
+            console.log('Contact Form Submission:', data);
+            
+            // Show success message
+            alert('Thank you for your inquiry! We\'ll be in touch within 24 hours.\n\nFor urgent matters, please call us directly.');
+            
+            // Reset form
+            this.reset();
+            
+            // TODO: Replace with actual form submission to your email/CRM
+            // Example: Send to Formspree, EmailJS, or your own backend
+        });
+        
+        // Careers Form Handling
+        const careersForm = document.getElementById('careersForm');
+        if (careersForm) {
+            careersForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(this);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                
+                // Log to console (replace with actual form submission)
+                console.log('Careers Application:', data);
+                
+                // Show success message
+                alert('Thank you for your application!\n\nWe review all applications carefully and will contact shortlisted candidates within 2 weeks.');
+                
+                // Reset form
+                this.reset();
+                
+                // TODO: Replace with actual form submission
+            });
+        }
+    </script>
+    
+    <!-- Google Analytics -->
+    <!-- TODO: Replace YOUR_MEASUREMENT_ID with your actual Google Analytics ID -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html>
